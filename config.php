@@ -1,39 +1,31 @@
 <?php
 
 return [
-    'production' => false,
-    'baseUrl' => 'https://artisan-static-demo.netlify.com',
+    'production'        => false,
+    'baseUrl'           => 'https://blog.azur.network',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
-        'image' => 'default-share.png',
-    ],
-    'owner' => [
-        'name' => 'John Doe',
-        'twitter' => 'johndoe',
-        'github' => 'johndoe',
+        'title'         => 'Azur Network Blog',
+        'description'   => 'Stay up to date with Azur Network!',
+        'image'         => 'share_image.png',
     ],
     'services' => [
-        'analytics' => 'UA-XXXXX-Y',
-        'disqus' => 'artisanstatic',
-        'cloudinary' => 'artisanstatic',
-        'jumprock' => 'artisanstatic',
+        'analytics'     => 'UA-XXXXX-Y',
+        'disqus'        => 'Test',
     ],
     'collections' => [
         'posts' => [
-            'path' => 'posts/{filename}',
-            'sort' => '-date',
-            'extends' => '_layouts.post',
-            'section' => 'postContent',
-            'isPost' => true,
-            'comments' => true,
-            'tags' => [],
+            'path'      => 'posts/{filename}',
+            'sort'      => '-date',
+            'extends'   => '_layouts.post',
+            'section'   => 'postContent',
+            'isPost'    => true,
+            'tags'      => [],
         ],
         'tags' => [
-            'path' => 'tags/{filename}',
-            'extends' => '_layouts.tag',
-            'section' => '',
-            'name' => function ($page) {
+            'path'      => 'tags/{filename}',
+            'extends'   => '_layouts.tag',
+            'section'   => '',
+            'name'      => function ($page) {
                 return $page->getFilename();
             },
         ],
