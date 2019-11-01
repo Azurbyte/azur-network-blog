@@ -2,8 +2,12 @@ backend:
   name: git-gateway
   branch: master
   squash_merges: true
+site_url: https://blog.azur.network
+display_url: https://blog.azur.network
+logo_url: https://cdn.azur.network/AzurNetwork_2019_logo.png
 publish_mode: editorial_workflow
-media_folder: images # required but unused, host images externally
+media_folder: BlogStorageFiles
+public_folder: /blog_storage
 collections:
   - name: "posts"
     label: "Posts"
