@@ -6,8 +6,16 @@ site_url: https://blog.azur.network
 display_url: https://blog.azur.network
 logo_url: https://cdn.azur.network/AzurNetwork_2019_logo.png
 publish_mode: editorial_workflow
-media_folder: BlogStorageFiles
-public_folder: /blog_storage
+#media_folder: BlogStorageFiles
+#public_folder: /blog_storage
+
+###### UPLOAD CARE START ######
+media_library:
+  name: uploadcare
+  config:
+    publicKey: e68a0e27119e69caeae0
+####### UPLOAD CARE END #######
+
 collections:
   - name: "posts"
     label: "Posts"
